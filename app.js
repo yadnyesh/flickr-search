@@ -1,7 +1,7 @@
-(function(){
+(function() {
   'use Strict';
   angular.module('flickrApp', ['ngMaterial'])
-    .controller('ListController', ['$scope', functio(){
+    .controller('ListController', ['$scope', function() {
 
     }]);
 })();
