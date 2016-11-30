@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:400,500.700,400italic" />
   </head>
-  <body>
+  <body ng-app="flickrApp" ng-controller="ListController" layout="column" layout-align="top center">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <span class="md-flex">Flickr Search</span>
+      </div>
+    </md-toolbar>
     <script src="bower_components/angular-material/angular.min.js"></script>
     <script src="bower_components/angular-material/angular-aria.min.js"></script>
     <script src="bower_components/angular-material/angular-animate.min.js"></script>
