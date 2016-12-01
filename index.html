@@ -16,8 +16,7 @@
     <md-content layout="column" layout_align="center center">
       <div class="appContent">
         <form ng-submit="search()">
-          <md-text-float label="Search for" ng-model="searchTerm"></md-text-float>
-          <md-datepicker ng-model="birthday"></md-datepicker>
+          <md-input  name="phone"  ng-pattern="/^[0-9]+$/" required></md-input>
         </form>
       </div>
     </md-content>
