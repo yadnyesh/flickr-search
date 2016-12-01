@@ -3,7 +3,7 @@
   <head>
     <title>Flickr Search</title>
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css"/>
-    <link rel="stylesheet" href="bower_components/angular-material/blue-theme.css"/>
+    <!--<link rel="stylesheet" href="bower_components/angular-material/themes/blue-theme.css"/>-->
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:400,500.700,400italic" />
   </head>
@@ -13,11 +13,20 @@
         <span class="md-flex">Flickr Search</span>
       </div>
     </md-toolbar>
-    <script src="bower_components/angular-material/angular.min.js"></script>
-    <script src="bower_components/angular-material/angular-aria.min.js"></script>
-    <script src="bower_components/angular-material/angular-animate.min.js"></script>
-    <script src="bower_components/angular-material/hammer.min.js"></script>
-    <script src="bower_components/angular-material/angualr-material.min.js"></script>
+    <md-content layout="column" layout_align="center center">
+      <div class="appContent">
+        <form ng-submit="search()">
+          <md-text-float label="Search for" ng-model="searchTerm"></md-text-float>
+          <md-datepicker ng-model="birthday"></md-datepicker>
+        </form>
+      </div>
+    </md-content>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/hammerjs/hammer.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
